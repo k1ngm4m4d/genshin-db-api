@@ -1,0 +1,9 @@
+<?php
+$api_url = "https://genshin-db-api.vercel.app/api/";
+
+$response = file_get_contents($api_url);
+
+$data = json_decode($response, true);
+
+print_r($data);
+?>
